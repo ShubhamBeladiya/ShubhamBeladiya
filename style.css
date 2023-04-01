@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Fasthand&family=Noto+Serif+Gujarati:wght@300;400&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #050505;
+}
+
+
+.nav-bar{
+	height: 68px;
+	width: 100%;
+	
+}
+ 
+.nav-bar .logo{
+	display: inline-block;
+	
+}
+
+.nav-bar .logo .logo-1{
+	font-size: 35px;
+    color: #DC143C;
+	text-decoration: 2px underline solid #fff;
+	margin-top: 22px;
+	margin-left: 90px;
+}
+.nav-bar .logo .logo-2{
+	font-size: 35px;
+    color: #fff;
+	text-decoration: 2px underline solid #DC143C;
+	margin-top: 22px;
+}
+.nav-bar ul{
+	float: right;
+	list-style-type: none;
+}
+
+
+.nav-bar ul{
+	margin-right: 70px;
+
+}
+.nav-bar ul li{
+	display: inline-block;
+}
+
+
+.nav-bar ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+	font-size: 17px;
+	color: #fff;
+	padding: 22px 15px;
+	display: block;
+
+}
+
+
+.home{
+	padding: 160px 160px;
+
+}
+
+.home .text-1{
+    font-size: 27px;
+    color: #fff;
+}
+.home .text-2{
+    font-size: 75px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-3{
+    font-size: 20px;
+    color: #fff;
+    margin-left: -3px;
+    margin-top: 7px;
+}
+.home .text-4{
+    font-size: 75px;
+    color: #fff;
+    font-weight: 600;        
+    margin-left: -3px;
+}
+
+
+
+
+
+.nav-bar ul li a:hover{
+	color: #DC143C;	
+}
+	
+}
+.nav-bar ul li .home1:{
+	border: 3px solid #DC143C;	
+	border-radius: 20px;
+}
+
+
+.nav-bar .menu{
+	color: #fff;
+	background-color: #fff;
+	margin-top: 9.5px;
+	margin-right: 53px;
+	float: right;
+	display: none;
+
+}
+
+.nav-bar .close{
+	color: #fff;
+	background-color: #fff;
+	margin-top: 9.5px;
+	margin-right: 53px;
+	float: right;
+	display: none;
+
+}
+
+
+.nav-bar .menu:active{
+	
+}
+
+
+
+
+
+
+
+/********************************
+     Responsive Section Star
+*********************************/
+
+
+@media only screen and (max-width: 900px){
+	.nav-bar ul li a{
+		display: none;
+	}
+
+	.nav-bar ul li{
+		
+	}
+
+
+   .nav-bar .logo img{
+   	padding-left: 20px;
+
+   }
+
+	.nav-bar .menu{
+		display: block;
+		
+	}
+
+}
