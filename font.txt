@@ -1,4 +1,0 @@
-font-family: 'Alkatra', cursive;
-font-family: 'Fasthand', cursive;
-font-family: 'Noto Serif Gujarati', serif;
-font-family: 'Open Sans', sans-serif;
