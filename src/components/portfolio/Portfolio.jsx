@@ -5,7 +5,6 @@ import card3 from "../../assets/images/portfolio-images/card-3.png";
 import card4 from "../../assets/images/portfolio-images/card-4.png";
 import card5 from "../../assets/images/portfolio-images/card-5.png";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
-
 const projectData = [
   {
     id: 1,
@@ -13,7 +12,7 @@ const projectData = [
     category: "Web Development",
     title: "CarPoint — Car Dealership Website",
     description:
-      "04/2025 – 05/2025 • Responsive vehicle showcase and management platform built with PHP & MySQL. Features: vehicle listings, filter search, user dashboard and wishlist.",
+      "Developed a responsive vehicle showcase and management platform for a modern car dealership. Features include vehicle listings, filter-based search, user dashboard, and wishlist system. Focused on smooth performance and clean UI for easy browsing. Skills: PHP · MySQL · JavaScript · HTML & CSS",
     link: "#!",
   },
   {
@@ -22,43 +21,43 @@ const projectData = [
     category: "E-commerce",
     title: "ShopLux — E-commerce Website",
     description:
-      "01/2025 – 02/2025 • Full e-commerce site using PHP, MySQL and Bootstrap. Implemented product catalog, cart, wishlist, secure login, admin panel and order management.",
+      "Built a fully functional e-commerce platform with a modern interface and secure backend. Includes product catalog, shopping cart, wishlist, admin panel, and order management. Designed for an intuitive shopping experience and fast checkout. Skills: PHP · MySQL · Bootstrap · JavaScript",
     link: "#!",
   },
   {
     id: 3,
     image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "MaxFit Gym – Fitness & Membership Portal",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
+      "Created a dynamic gym website to showcase fitness programs, trainers, and membership plans. Features include a membership form, trainer profiles, and a responsive design for all devices. Focused on visual appeal and strong brand presentation. Skills: PHP · JavaScript · HTML & CSS · MySQL",
     link: "#!",
   },
   {
     id: 4,
     image: card4,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "PetPoint – Pet Care & Services Platform",
     description:
-      "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
+      "Developed a responsive web platform for pet owners and service providers. Users can explore pet products, veterinary services, and adoption options. Focused on clean UI, smooth navigation, and mobile-first optimization. Skills: PHP · JavaScript · MySQL · HTML & CSS",
     link: "#!",
   },
   {
     id: 5,
     image: card5,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "E-commerce",
+    title: "WestKart – E-commerce Marketplace",
     description:
-      "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
+      "Developed an online marketplace using WordPress and WooCommerce. Implemented product listings, shopping cart, wishlist, and secure checkout flow. Focused on responsive design and easy user experience across devices. Skills: WordPress · WooCommerce · Responsive Web Design",
     link: "#!",
   },
   {
     id: 6,
     image: card6,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Food Delivery",
+    title: "PetPuja – Online Food Delivery Platform",
     description:
-      "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
+      "Developed a responsive food delivery website for exploring cuisines and ordering meals online. Users can browse categories, search dishes, and place quick orders. Focused on vibrant design, simple navigation, and a seamless ordering experience. Skills: PHP · MySQL · JavaScript · HTML & CSS · Bootstrap",
     link: "#!",
   },
 ];
