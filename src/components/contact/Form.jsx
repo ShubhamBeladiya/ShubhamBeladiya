@@ -18,7 +18,66 @@ const commonClass =
 // Use a CSS variable driven border so the inputs work in dark theme.
 const commonStyle = { borderBottom: '2px solid var(--text-muted)' };
 
+import { useState } from 'react';
+
 const Form = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    location: '',
+    budget: '',
+    subject: '',
+    message: '',
+  });
+  const [status, setStatus] = useState({ loading: false, ok: null, error: null });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((s) => ({ ...s, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, ok: null, error: null });
+
+    // Basic validation
+    if (!form.name || !form.email || !form.message) {
+      setStatus({ loading: false, ok: false, error: 'Please complete name, email and message.' });
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      // Some environments (or server errors) may return an empty or non-JSON body.
+      // Protect against "Unexpected end of JSON input" by trying to parse JSON and
+      // falling back to a text or status-based message.
+      let body = null;
+      try {
+        body = await res.json();
+      } catch (err) {
+        // ignore JSON parse errors — we'll build a fallback message below
+        body = null;
+      }
+
+      if (res.ok) {
+        setStatus({ loading: false, ok: true, error: null });
+        setForm({ name: '', email: '', location: '', budget: '', subject: '', message: '' });
+      } else {
+        const fallback = (body && body.error) || (await (async () => {
+          try { return await res.text(); } catch { return res.statusText || 'Failed to send message'; }
+        })());
+        setStatus({ loading: false, ok: false, error: fallback || 'Failed to send message' });
+      }
+    } catch (err) {
+      setStatus({ loading: false, ok: false, error: err.message || 'Network error' });
+    }
+  };
+
   return (
     <div>
       <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
@@ -26,8 +85,11 @@ const Form = () => {
         opportunities.
       </p>
       <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
+        <form className="flex flex-col gap-4 mt-4" onSubmit={handleSubmit}>
           <input
+            name="name"
+            value={form.name}
+            onChange={handleChange}
             type="text"
             placeholder="Name*"
             className={`${commonClass}`}
@@ -35,6 +97,9 @@ const Form = () => {
             required
           />
           <input
+            name="email"
+            value={form.email}
+            onChange={handleChange}
             type="email"
             placeholder="Email*"
             className={`${commonClass}`}
@@ -42,43 +107,57 @@ const Form = () => {
             required
           />
           <input
+            name="location"
+            value={form.location}
+            onChange={handleChange}
             type="text"
-            placeholder="Location*"
+            placeholder="Location"
             className={`${commonClass}`}
             style={commonStyle}
-            required
           />
 
           <div className="flex max-xs:flex-col max-xs:gap-4">
             <input
+              name="budget"
+              value={form.budget}
+              onChange={handleChange}
               type="text"
-              placeholder="Budget*"
+              placeholder="Budget"
               className={`${commonClass} xs:w-[50%] me-5`}
               style={commonStyle}
-              required
             />
             <input
+              name="subject"
+              value={form.subject}
+              onChange={handleChange}
               type="text"
-              placeholder="Subject*"
+              placeholder="Subject"
               className={`${commonClass}`}
               style={commonStyle}
-              required
             />
           </div>
 
-          <input
-            type="text"
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
             placeholder="Message*"
-            className={`${commonClass}`}
+            className={`${commonClass} h-32 resize-none`}
             style={commonStyle}
             required
           />
-          <button
-            type="submit"
-            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
-          >
-            Submit {telegramSVG}
-          </button>
+
+          <div className="flex items-center gap-4">
+            <button
+              type="submit"
+              disabled={status.loading}
+              className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
+            >
+              {status.loading ? 'Sending...' : 'Submit'} {telegramSVG}
+            </button>
+            {status.ok && <p className="text-on-surface">Message sent — thank you!</p>}
+            {status.error && <p className="text-red-400">{status.error}</p>}
+          </div>
         </form>
       </div>
     </div>
