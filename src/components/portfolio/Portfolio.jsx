@@ -10,19 +10,19 @@ const projectData = [
   {
     id: 1,
     image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Web Development",
+    title: "CarPoint — Car Dealership Website",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
+      "04/2025 – 05/2025 • Responsive vehicle showcase and management platform built with PHP & MySQL. Features: vehicle listings, filter search, user dashboard and wishlist.",
     link: "#!",
   },
   {
     id: 2,
     image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "E-commerce",
+    title: "ShopLux — E-commerce Website",
     description:
-      "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
+      "01/2025 – 02/2025 • Full e-commerce site using PHP, MySQL and Bootstrap. Implemented product catalog, cart, wishlist, secure login, admin panel and order management.",
     link: "#!",
   },
   {

@@ -10,18 +10,18 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 const addressData = [
   {
     icon: faLocationDot,
-    title: "Address",
-    description: "New Mexico, 31134",
+    title: "Location",
+    description: "Nana Varachha, Surat, Gujarat, India",
   },
   {
     icon: faEnvelope,
-    title: "My Email",
-    description: "mymail@mail.com",
+    title: "Email",
+    description: "Beladiyashubham@gmail.com",
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
-    description: "00-123 00000",
+    title: "Phone",
+    description: "+91 88661 47285",
   },
 ];
 

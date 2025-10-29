@@ -32,19 +32,19 @@ const Introduction = () => {
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
             Hello, I’m
             <span className="text-nowrap shrink-0 inline-block w-full">
-              Brooklyn Gilbert
+              Shubham Beladiya
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a Freelance <span className="bg-highlight">UI/UX Designer</span>{" "}
-            and <span className="bg-highlight"> Developer</span> based in
-            London, England. I strives to build immersive and beautiful web
-            applications through carefully crafted code and user-centric design.
+            I'm a freelance <span className="bg-highlight">Web Developer</span>{" "}
+            &amp; <span className="bg-highlight">Designer</span> based in
+            Surat, India. I build responsive websites and user-focused UI/UX
+            designs using HTML, CSS, JavaScript, PHP and modern design tools.
           </p>
           <p className="text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:example@gmail.com"
+              href="mailto:Beladiyashubham@gmail.com"
             >
               Say Hello!
             </a>
