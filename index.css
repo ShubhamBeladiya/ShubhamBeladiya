@@ -62,8 +62,8 @@ body {
       radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%); /* center right */
 }
 .blog-background {
-  background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
-    radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+  background: radial-gradient(circle at -10% 0%, rgba(153,41,251,0.10) 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, rgba(196,245,233,0.30) 5%, transparent 25%);
 }
 
 /* Dark theme overrides when DaisyUI/data-theme is set to dark */
@@ -95,6 +95,18 @@ body {
 
 [data-theme="dark"] .swiper-pagination-bullet {
   background-color: #6b7280;
+}
+
+/* Theme-aware section backgrounds for dark mode (more subdued glow) */
+[data-theme="dark"] .introduction-profile-background {
+  background: radial-gradient(circle at 12% 100%, rgba(139,92,246,0.14) 1% 6px, transparent 18%),
+    radial-gradient(circle at 95% -15%, rgba(139,92,246,0.12) 5%, transparent 32%),
+    radial-gradient(circle at center right, rgba(100,116,139,0.10) 2%, transparent 36%);
+}
+
+[data-theme="dark"] .blog-background {
+  background: radial-gradient(circle at -10% 0%, rgba(139,92,246,0.14) 1%, transparent 28%),
+    radial-gradient(circle at 110% 30%, rgba(51,65,85,0.22) 6%, transparent 28%);
 }
 
 /* Common utility overrides used throughout the React app */

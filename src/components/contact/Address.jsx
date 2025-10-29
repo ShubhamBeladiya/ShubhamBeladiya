@@ -13,7 +13,7 @@ const Address = ({ item }) => {
     >
       <div
         className={`h-10 md:h-12 aspect-square center rounded-[4px]`}
-        style={{ backgroundColor: hover ? 'var(--color-picto-primary)' : 'rgba(237,216,255,0.5)' }}
+        style={{ backgroundColor: hover ? 'var(--color-picto-primary)' : 'rgba(153,41,251,0.14)' }}
       >
         <FontAwesomeIcon
           icon={item?.icon}
