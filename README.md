@@ -33,6 +33,10 @@ pnpm dev
 # or
 bun dev
 ```
+To add a downloadable resume PDF, place your `resume.pdf` at `assets/resume.pdf` and the Resume page will link to it.
+The project already contains the provided resume PDF at the repository root:
+
+- `Shubham-Beladiya-Resume-2025.pdf` — the site "Download CV" buttons link to `/Shubham-Beladiya-Resume-2025.pdf` so it will download directly when hosted.
 
 ## Author
 
