@@ -4,17 +4,23 @@ This repository contains a simple, responsive personal portfolio website.
 
 Files added/updated:
 
-- `index.html` — Home / hero / about preview and links to projects and contact.
-- `Contact.html` — Contact page with a simple form (uses mailto fallback).
-- `projects.html` — Projects overview page (placeholders to replace with real work).
-- `about.html` — Longer bio / experience page.
-- `style.css` — Modern responsive styling.
-- `scripts.js` — Mobile nav toggle, footer year, and contact mailto behavior.
-- `photos/` — existing images used as thumbnails/logo/background.
 
 How to run locally
 
 1. Open `index.html` in a browser (double-click or use a local file server).
+
+Notes about folder-based URLs
+
+I've added folder-based pages so the site can be served with "clean" URLs (no .html extension):
+
+- `about/` → about/index.html
+- `projects/` → projects/index.html
+- `contact/` → contact/index.html
+- `resume/` → resume/index.html
+
+When hosted on GitHub Pages, Vercel, Netlify, or most static hosts, visiting `/about/` will automatically serve `/about/index.html` so the `.html` extension is hidden.
+
+To add a downloadable resume PDF, place your `resume.pdf` at `assets/resume.pdf` and the Resume page will link to it.
 
 Optional: serve with a lightweight server for better behavior (recommended for development):
 
