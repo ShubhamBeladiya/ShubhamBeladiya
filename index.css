@@ -234,3 +234,33 @@ body {
   fill: var(--text-muted) !important;
   stroke: var(--text-muted) !important;
 }
+
+/* Accessible text color overrides for dark theme --------------------------------- */
+/* Map common Tailwind gray classes to theme-aware colors so text is readable */
+[data-theme="dark"] .text-gray-400,
+[data-theme="dark"] .text-gray-500,
+[data-theme="dark"] .text-soft-dark {
+  color: var(--text-muted) !important; /* secondary / muted */
+}
+
+[data-theme="dark"] .text-gray-600,
+[data-theme="dark"] .text-gray-700,
+[data-theme="dark"] .text-gray-900,
+[data-theme="dark"] .text-black {
+  color: var(--color-on-surface) !important; /* primary readable text */
+}
+
+/* Utility classes you can use in components for clarity */
+.text-on-surface {
+  color: var(--color-on-surface) !important;
+}
+
+.text-muted-theme {
+  color: var(--text-muted) !important;
+}
+
+/* Small helper for links that should inherit primary readable color */
+.link-on-surface a,
+.link-on-surface {
+  color: var(--color-on-surface) !important;
+}
