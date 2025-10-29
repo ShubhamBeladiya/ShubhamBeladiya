@@ -1,39 +1,47 @@
-# Shubham Beladiya — Portfolio
+# Picto - Personal Portfolio Free Template
 
-This repository contains a simple, responsive personal portfolio website.
+#### Preview
 
-Files added/updated:
+- [Demo](https://themewagon.github.io/picto/)
 
+#### Download
 
-How to run locally
+- [Download from ThemeWagon](https://themewagon.com/themes/picto)
 
-1. Open `index.html` in a browser (double-click or use a local file server).
+## Getting Started
 
-Notes about folder-based URLs
+1. Clone Repository
 
-I've added folder-based pages so the site can be served with "clean" URLs (no .html extension):
-
-- `about/` → about/index.html
-- `projects/` → projects/index.html
-- `contact/` → contact/index.html
-- `resume/` → resume/index.html
-
-When hosted on GitHub Pages, Vercel, Netlify, or most static hosts, visiting `/about/` will automatically serve `/about/index.html` so the `.html` extension is hidden.
-
-To add a downloadable resume PDF, place your `resume.pdf` at `assets/resume.pdf` and the Resume page will link to it.
-
-Optional: serve with a lightweight server for better behavior (recommended for development):
-
-On Windows PowerShell, from project folder run:
-
-```powershell
-python -m http.server 8000
+```
+git clone https://github.com/themewagon/picto.git
 ```
 
-Then visit http://localhost:8000 in your browser.
+2. Install Dependencies
 
-Next steps
+```
+npm i
+```
 
-- Replace placeholder project images and descriptions in `projects.html`.
-- Add a hosted resume `resume.pdf` and update the resume link.
-- Hook the contact form to a backend or Formspree for production submissions.
+3. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+## Author
+
+```
+Developed by ThemeWagon and development team.
+```
+
+## License
+
+- Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
+- Licensed cover under [MIT]
+- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
