@@ -20,7 +20,9 @@ export default async function handler(req, res) {
 
   // Use Gmail SMTP. For Gmail you must use an App Password (recommended) or proper OAuth2.
   const user = process.env.EMAIL_USER;
-  const pass = process.env.EMAIL_PASS;
+  // Trim surrounding quotes (in case a value was pasted with quotes) and trim whitespace.
+  // Do NOT log the value itself to avoid leaking secrets.
+  const pass = process.env.EMAIL_PASS ? process.env.EMAIL_PASS.replace(/^"|"$/g, '').trim() : undefined;
   const to = process.env.EMAIL_TO || process.env.EMAIL_USER;
 
   if (!user || !pass) {
