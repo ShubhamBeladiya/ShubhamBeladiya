@@ -2,18 +2,18 @@
 
 #### Preview
 
-- [Demo](https://themewagon.github.io/picto/)
+- [Demo](https://ShubhamBeladiya.github.io/picto/)
 
 #### Download
 
-- [Download from ThemeWagon](https://themewagon.com/themes/picto)
+- [Download from ShubhamBeladiya](https://ShubhamBeladiya.com/themes/picto)
 
 ## Getting Started
 
 1. Clone Repository
 
 ```
-git clone https://github.com/themewagon/picto.git
+git clone https://github.com/ShubhamBeladiya/picto.git
 ```
 
 2. Install Dependencies
@@ -41,11 +41,11 @@ The project already contains the provided resume PDF at the repository root:
 ## Author
 
 ```
-Developed by ThemeWagon and development team.
+Developed by ShubhamBeladiya and development team.
 ```
 
 ## License
 
-- Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
+- Design and Code is Copyright &copy; <a href="#" target="_blank">ShubhamBeladiya</a>
 - Licensed cover under [MIT]
-- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
+- Developed by <a href="#" target="_blank">ShubhamBeladiya</a>

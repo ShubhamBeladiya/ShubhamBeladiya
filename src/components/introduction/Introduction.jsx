@@ -59,10 +59,10 @@ const Introduction = () => {
         </div>
       </div>
       <div
-        className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}
+        className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative introduction-person-wrap rounded-3xl overflow-hidden`}
       >
         <img
-          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
+          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white introduction-person-img`}
           src={person}
           alt="person"
         />

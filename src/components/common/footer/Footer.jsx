@@ -41,11 +41,11 @@ const Footer = () => {
       <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
         Developed with ❤️ by{" "}
         <a
-          href="https://www.themewagon.com"
+          href="#"
           className="underline font-bold"
           target="_blank"
         >
-          ThemeWagon
+          Shubham Beladiya
         </a>
       </p>
     </div>

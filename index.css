@@ -25,6 +25,12 @@
   --color-soft-dark: #87909d;
 }
 
+/* Lightweight text variables for both themes - provide defaults for light theme */
+:root {
+  --color-on-surface: #081028; /* dark text on light surface (fallback) */
+  --text-muted: #6b7280;
+}
+
 .btn-primary {
   @apply bg-picto-primary border-0 text-white hover:scale-[102%] hover:bg-picto-primary-dark transition-all duration-500;
 }
@@ -58,4 +64,148 @@ body {
 .blog-background {
   background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
     radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+}
+
+/* Dark theme overrides when DaisyUI/data-theme is set to dark */
+[data-theme="dark"] {
+  --color-picto-primary: #8b5cf6;
+  --color-picto-primary-dark: #7c3aed;
+  /* surface and muted text */
+  --color-soft-white: #081028; /* dark surface */
+  --color-soft-dark: #9aa4b2; /* muted text */
+  --color-on-surface: #e6eef8; /* primary readable text on dark surface */
+  --text-muted: #9aa4b2;
+  background-color: var(--color-soft-white);
+  color: #e6eef8;
+}
+
+[data-theme="dark"] .bg-soft-white {
+  background-color: var(--color-soft-white) !important;
+  color: #e6eef8 !important;
+}
+
+[data-theme="dark"] .bg-highlight {
+  /* subtle dark highlight */
+  background: linear-gradient(to top, rgba(255,196,196,0.03) 40%, transparent 40%);
+}
+
+[data-theme="dark"] .swiper-pagination-bullet-active {
+  background-color: #c7b3ff !important;
+}
+
+[data-theme="dark"] .swiper-pagination-bullet {
+  background-color: #6b7280;
+}
+
+/* Common utility overrides used throughout the React app */
+[data-theme="dark"] .bg-white {
+  background-color: var(--color-soft-white) !important;
+  color: #e6eef8 !important;
+}
+
+[data-theme="dark"] .text-black {
+  color: #e6eef8 !important;
+}
+
+[data-theme="dark"] .text-white {
+  color: var(--color-on-surface) !important;
+}
+
+[data-theme="dark"] .shadow-white {
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6) !important;
+}
+
+[data-theme="dark"] .shadow-gray-200,
+[data-theme="dark"] .shadow-gray-300 {
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6) !important;
+}
+
+[data-theme="dark"] .border-gray-200,
+[data-theme="dark"] .border-gray-100,
+[data-theme="dark"] .border-white {
+  border-color: rgba(255,255,255,0.06) !important;
+}
+
+[data-theme="dark"] .center a,
+[data-theme="dark"] a {
+  color: inherit;
+}
+
+/* Person image theme-aware styling ------------------------------------------------- */
+.introduction-person-img {
+  transition: filter 300ms ease, opacity 300ms ease;
+}
+
+/* Dark-theme filter: slightly reduce brightness, increase contrast and lower saturation
+   so the image blends nicely with the dark UI without losing detail. */
+[data-theme="dark"] .introduction-person-img {
+  filter: brightness(0.85) contrast(1.06) saturate(0.92);
+  opacity: 0.98;
+  mix-blend-mode: normal;
+}
+
+/* Light-theme: keep the original look */
+[data-theme="light"] .introduction-person-img,
+.introduction-person-img:not([data-theme]) {
+  filter: none;
+  opacity: 1;
+}
+
+/* Dark bluish overlay to tint the person image subtly */
+[data-theme="dark"] .introduction-person-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* two-stop gradient to give a subtle vertical depth */
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 40, 73, 0.18) 0%,
+    rgba(7, 54, 92, 0.22) 55%,
+    rgba(3, 25, 48, 0.26) 100%
+  );
+  mix-blend-mode: overlay;
+  transition: opacity 300ms ease, background-color 300ms ease;
+  border-radius: inherit; /* match container rounding */
+}
+
+/* Slightly stronger tint option for higher contrast screens */
+[data-theme="dark"] .introduction-person-wrap.tint-strong::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 40, 73, 0.30) 0%,
+    rgba(7, 54, 92, 0.34) 55%,
+    rgba(3, 25, 48, 0.38) 100%
+  );
+}
+
+/* Information / stat boxes (light in light theme, darker surface in dark theme) */
+.info-summary {
+  background: var(--color-soft-white);
+  border-radius: 0.75rem; /* matches rounded-lg */
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.04);
+  transition: background-color 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+[data-theme="dark"] .info-summary {
+  /* var(--color-soft-white) is overridden in dark theme to a dark surface */
+  background: var(--color-soft-white);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.55);
+}
+
+/* Optional compact variant */
+.info-summary.compact {
+  padding: 0.25rem;
+}
+
+/* ensure inner text inherits correct color in both themes */
+/* stat text colors */
+.info-summary .info-number {
+  color: var(--color-picto-primary);
+}
+
+.info-summary .info-label {
+  color: var(--color-soft-dark);
 }
