@@ -13,7 +13,10 @@ const telegramSVG = (
 );
 
 const commonClass =
-  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
+  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary w-full rounded-none px-0";
+
+// Use a CSS variable driven border so the inputs work in dark theme.
+const commonStyle = { borderBottom: '2px solid var(--text-muted)' };
 
 const Form = () => {
   return (
@@ -28,18 +31,21 @@ const Form = () => {
             type="text"
             placeholder="Name*"
             className={`${commonClass}`}
+            style={commonStyle}
             required
           />
           <input
             type="email"
             placeholder="Email*"
             className={`${commonClass}`}
+            style={commonStyle}
             required
           />
           <input
             type="text"
             placeholder="Location*"
             className={`${commonClass}`}
+            style={commonStyle}
             required
           />
 
@@ -48,12 +54,14 @@ const Form = () => {
               type="text"
               placeholder="Budget*"
               className={`${commonClass} xs:w-[50%] me-5`}
+              style={commonStyle}
               required
             />
             <input
               type="text"
               placeholder="Subject*"
               className={`${commonClass}`}
+              style={commonStyle}
               required
             />
           </div>
@@ -62,6 +70,7 @@ const Form = () => {
             type="text"
             placeholder="Message*"
             className={`${commonClass}`}
+            style={commonStyle}
             required
           />
           <button

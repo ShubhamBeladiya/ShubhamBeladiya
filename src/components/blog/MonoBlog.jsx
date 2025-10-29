@@ -8,10 +8,10 @@ const MonoBlog = ({ data }) => {
           className="w-full h-56.5 object-cover "
         />
         <div className="m-6">
-          <p className="text-[10px] xs:text-[14px] font-normal text-gray-400 ">
+          <p className="text-[10px] xs:text-[14px] font-normal" style={{ color: 'var(--text-muted)' }}>
             {data?.date} / {data?.comments} Comments
           </p>
-          <p className="text-[14px] xs:text-lg font-medium text-[#333333]">
+          <p className="text-[14px] xs:text-lg font-medium" style={{ color: 'var(--color-on-surface)' }}>
             {data?.title.length > 40
               ? `${data?.title.slice(0, 40)}...`
               : data?.title}

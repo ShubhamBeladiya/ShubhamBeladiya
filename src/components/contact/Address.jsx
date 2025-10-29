@@ -12,9 +12,8 @@ const Address = ({ item }) => {
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className={`h-10 md:h-12 aspect-square ${
-          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
-        } center rounded-[4px]`}
+        className={`h-10 md:h-12 aspect-square center rounded-[4px]`}
+        style={{ backgroundColor: hover ? 'var(--color-picto-primary)' : 'rgba(237,216,255,0.5)' }}
       >
         <FontAwesomeIcon
           icon={item?.icon}
@@ -24,10 +23,10 @@ const Address = ({ item }) => {
         />
       </div>
       <div className="ms-3.25">
-        <p className="text-[12px] md:text-[14px] text-[#424E60] font-normal">
+        <p className="text-[12px] md:text-[14px] font-normal" style={{ color: 'var(--text-muted)' }}>
           {item?.title}:
         </p>
-        <p className="text-[14px] md:text-[16px] text-[#132238] font-medium">
+        <p className="text-[14px] md:text-[16px] font-medium" style={{ color: 'var(--color-on-surface)' }}>
           {item?.description}
         </p>
       </div>

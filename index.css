@@ -209,3 +209,28 @@ body {
 .info-summary .info-label {
   color: var(--color-soft-dark);
 }
+
+/* Map common SVG fills used for logos to theme-aware colors in dark mode.
+   This prevents white/black logo parts from disappearing on dark backgrounds. */
+[data-theme="dark"] svg [fill="#FFFFFF"] {
+  fill: var(--color-on-surface) !important;
+}
+
+[data-theme="dark"] svg [fill="#B8BCC2"] {
+  fill: var(--text-muted) !important;
+}
+
+[data-theme="dark"] svg [fill="#231F20"] {
+  fill: var(--text-muted) !important;
+}
+
+[data-theme="dark"] svg [fill="#333333"] {
+  fill: var(--text-muted) !important;
+}
+
+/* Force all SVG shapes inside the happy clients carousel to use muted color in dark theme
+   This covers any remaining hard-coded fills so logos stay visible on a dark surface. */
+[data-theme="dark"] .happy-clients svg * {
+  fill: var(--text-muted) !important;
+  stroke: var(--text-muted) !important;
+}
