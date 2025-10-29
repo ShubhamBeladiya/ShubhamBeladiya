@@ -8,11 +8,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socialIcons = [
-  { icon: faFacebookF, link: "#!" },
-  { icon: faDribbble, link: "#!" },
-  { icon: faInstagram, link: "#!" },
-  { icon: faLinkedin, link: "#!" },
-  { icon: faBehance, link: "#!" },
+  { icon: faFacebookF, link: "#contact" },
+  { icon: faDribbble, link: "#contact" },
+  { icon: faInstagram, link: "#contact" },
+  { icon: faLinkedin, link: "#contact" },
+  { icon: faBehance, link: "#contact" },
 ];
 
 const SocialMedia = () => {

@@ -13,7 +13,7 @@ const projectData = [
     title: "CarPoint — Car Dealership Website",
     description:
       "Developed a responsive vehicle showcase and management platform for a modern car dealership. Features include vehicle listings, filter-based search, user dashboard, and wishlist system. Focused on smooth performance and clean UI for easy browsing. Skills: PHP · MySQL · JavaScript · HTML & CSS",
-    link: "#!",
+    link: "#contact",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projectData = [
     title: "ShopLux — E-commerce Website",
     description:
       "Built a fully functional e-commerce platform with a modern interface and secure backend. Includes product catalog, shopping cart, wishlist, admin panel, and order management. Designed for an intuitive shopping experience and fast checkout. Skills: PHP · MySQL · Bootstrap · JavaScript",
-    link: "#!",
+    link: "#contact",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projectData = [
     title: "MaxFit Gym – Fitness & Membership Portal",
     description:
       "Created a dynamic gym website to showcase fitness programs, trainers, and membership plans. Features include a membership form, trainer profiles, and a responsive design for all devices. Focused on visual appeal and strong brand presentation. Skills: PHP · JavaScript · HTML & CSS · MySQL",
-    link: "#!",
+    link: "#contact",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const projectData = [
     title: "PetPoint – Pet Care & Services Platform",
     description:
       "Developed a responsive web platform for pet owners and service providers. Users can explore pet products, veterinary services, and adoption options. Focused on clean UI, smooth navigation, and mobile-first optimization. Skills: PHP · JavaScript · MySQL · HTML & CSS",
-    link: "#!",
+    link: "#contact",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projectData = [
     title: "WestKart – E-commerce Marketplace",
     description:
       "Developed an online marketplace using WordPress and WooCommerce. Implemented product listings, shopping cart, wishlist, and secure checkout flow. Focused on responsive design and easy user experience across devices. Skills: WordPress · WooCommerce · Responsive Web Design",
-    link: "#!",
+    link: "#contact",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const projectData = [
     title: "PetPuja – Online Food Delivery Platform",
     description:
       "Developed a responsive food delivery website for exploring cuisines and ordering meals online. Users can browse categories, search dishes, and place quick orders. Focused on vibrant design, simple navigation, and a seamless ordering experience. Skills: PHP · MySQL · JavaScript · HTML & CSS · Bootstrap",
-    link: "#!",
+    link: "#contact",
   },
 ];
 
@@ -86,7 +86,7 @@ const Portfolio = () => {
       </div>
       <div className="text-center">
         <a
-          href="#!"
+          href="#contact"
           className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
         >
           More Project
