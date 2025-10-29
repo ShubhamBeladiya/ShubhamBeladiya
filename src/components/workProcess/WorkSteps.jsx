@@ -12,7 +12,7 @@ const WorkSteps = ({ data, style }) => {
     >
       <div
         className={`w-11 h-11 sm:w-18 sm:h-18 text-center center rounded-md`}
-        style={{ backgroundColor: hover ? 'var(--color-picto-primary)' : 'rgba(237,216,255,0.5)' }}
+        style={{ backgroundColor: hover ? 'var(--color-picto-primary)' : 'rgba(153,41,251,0.14)' }}
       >
         <svg
           viewBox="0 0 32 32"
@@ -20,7 +20,7 @@ const WorkSteps = ({ data, style }) => {
           xmlns="http://www.w3.org/2000/svg"
           className="max-sm:p-2 sm:w-8 sm:h-8"
         >
-          <path d={data?.svgPath} fill={hover ? 'var(--color-on-surface)' : 'var(--color-picto-primary)'} />
+          <path d={data?.svgPath} fill={hover ? '#FFFFFF' : 'var(--color-picto-primary)'} />
         </svg>
       </div>
       <div className="mt-3 xs:mt-4 sm:mt-8">
