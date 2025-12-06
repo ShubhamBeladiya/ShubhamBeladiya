@@ -1,24 +1,27 @@
 <!-- Header -->
-<h1 align="center">👋 Hi, I'm <span style="color:#6366F1;">Shubham Beladiya</span></h1>
-<h3 align="center">Full-Stack Developer • Software Engineer • UI/UX Designer</h3>
+<h1 align="center">👋 Hi, I'm <span style="color:#7C3AED;">Shubham Beladiya</span></h1>
+<h3 align="center">Full-Stack Developer • Software Engineer • UI/UX Designer • Creative Developer</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Full--Stack%20Developer-6366F1?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/UI%2FUX%20Designer-8b5cf6?style=for-the-badge&logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Creative%20Developer-0ea5e9?style=for-the-badge&logo=sparkfun&logoColor=white" />
+  <img src="https://img.shields.io/badge/Code%20Quality-Matters-7C3AED?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Learning-Every%20Single%20Day-2563EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Design%20+%20Development-Full%20Stack-0EA5E9?style=for-the-badge" />
 </p>
 
 ---
 
 ## 🚀 About Me
-I'm a **Full-Stack Web Developer** from Surat, India, blending clean UI/UX design with strong backend engineering.  
-I build responsive, scalable, real-world applications using **PHP, MySQL & JavaScript**, and I love creating smooth dashboards, admin panels, and modern interfaces.
+I’m a **Full-Stack Web Developer** specializing in building responsive, scalable, and visually clean digital products.  
+I merge **frontend design**, **backend logic**, and **UX principles** to deliver real-world applications that perform and look great.
 
-Currently working at **Atmiya Infosoft** on production-grade client applications.
+👨‍💻 Currently working at **Atmiya Infosoft** building production-level client systems.  
+🎓 Completing my **BCA (2023–2026)** with strong academic performance.  
+🎨 Passionate about UI/UX, creative design, and modern web engineering.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Tech Stack & Skills
+
 ### **Frontend**
 <p>
   <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,figma" />
@@ -29,37 +32,63 @@ Currently working at **Atmiya Infosoft** on production-grade client applications
   <img src="https://skillicons.dev/icons?i=php,mysql,cpp,python" />
 </p>
 
-### **Tools & Platforms**
+### **Tools & Dev Environments**
 <p>
-  <img src="https://skillicons.dev/icons?i=vscode,github,git,wordpress,photoshop,illustrator" />
+  <img src="https://skillicons.dev/icons?i=vscode,github,git,postman,linux,windows" />
 </p>
 
+### **Web Platforms**
+<p>
+  <img src="https://skillicons.dev/icons?i=wordpress,shopify" />
+</p>
+
+### **Design & Creative Software**
+<p>
+  <img src="https://skillicons.dev/icons?i=photoshop,illustrator,aftereffects,canva" />
+</p>
+
+### **Other Tools**
+- XAMPP  
+- Google Sites  
+- Razorpay Integration  
+- MS Word, Excel, PowerPoint  
+
 ---
 
-## 🔥 Featured Projects
+## 🏗️ Featured Projects
 
-### **🚗 CarPoint – Car Dealership System**
-- PHP · MySQL · JS  
-- Vehicle listings, search filters, wishlist, user dashboard  
-- Fully responsive modern UI  
+### **🚗 CarPoint — Car Dealership System**
+*PHP · MySQL · JavaScript · Responsive UI*  
+- Vehicle listing  
+- Filter system  
+- User dashboard & wishlist  
+- Admin management  
 
-### **🛍️ ShopLux – E-Commerce Platform**
-- Cart system, reviews, coupons, admin panel  
-- Figma UI → Full-stack implementation  
+### **🛍️ ShopLux — Modern E-Commerce Platform**
+*PHP · MySQL · Bootstrap · Figma UI*  
+- Full product catalog  
+- Cart + Wishlist  
+- Coupons, reviews  
+- Admin panel + order management  
 
 ### **💪 MaxFit Gym Portal**
-- Membership system, trainer profiles  
-- Mobile-first UI  
+- Membership plans  
+- Trainer profiles  
+- Mobile-optimized experience  
 
-### **🐾 PetPoint – Pet Care Platform**
-- Adoption listings, service forms, product catalog  
+### **🐾 PetPoint — Pet Care Platform**
+- Adoption listings  
+- Service management  
+- Product section  
 
-### **🍽️ PetPuja (Food Delivery App)**
-- Category browsing, dish search, ordering flow  
+### **🍽 PetPuja — Food Ordering Platform**
+- Browse dishes  
+- Categories  
+- Ordering UI/UX  
 
 ---
 
-## 📊 Stats That Matter
+## 📊 GitHub Stats
 <p align="center">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=shubhambeladiya&show_icons=true&theme=tokyonight&hide_border=true" />
   <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubhambeladiya&layout=compact&theme=tokyonight&hide_border=true" />
@@ -67,20 +96,18 @@ Currently working at **Atmiya Infosoft** on production-grade client applications
 
 ---
 
-## 🎨 Design & Creative Work
-I also work with:
-- **Photoshop**
-- **Illustrator**
-- **After Effects**
-- **CapCut**
-- **Motion graphics**
-- UI Wireframes + Prototypes
+## 🎨 What I Also Do
+- UI/UX design  
+- Logo & branding  
+- Motion graphics  
+- Social media editing  
+- Wireframes & prototypes  
 
-Clean UI + Functional UX is my signature combo.
+I believe in design that’s clean, functional, and fast to understand.
 
 ---
 
-## 📬 Connect With Me
+## 📬 Let’s Connect
 <p>
   <a href="https://github.com/shubhambeladiya">
     <img src="https://img.shields.io/badge/GitHub-18181B?style=for-the-badge&logo=github&logoColor=white" />
@@ -95,11 +122,6 @@ Clean UI + Functional UX is my signature combo.
 
 ---
 
-## ⚡ Fun Facts
-- I hate messy UI — clean design is non-negotiable.  
-- I build more projects than I talk about.  
-- Always learning something new: Cloud, AI tools, UI engineering.
+## ✨ Personal Motto
+> “Build clean. Design smart. Ship fast.”
 
----
-
-### 🖊️ *“Code should look good, feel good, and work flawlessly.”*
